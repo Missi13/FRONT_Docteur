@@ -1,12 +1,19 @@
 <template>
-    <div>
+    <v-container fluid class="container">
+        <!--entete-->
+        <v-row class="navbarHaut">
+        </v-row>
 
-        <!--navbar-->
-        <header>
-            <navbar/>
-        </header>
+        <!--contenu-->
+        <v-row class="contenu d-flex flex-row justify-space-between">
+            <v-col cols="3" class="contenuGauche">
+                <navbar/>
+            </v-col>
 
-    </div>
+            <v-col cols="9" class="contenuDroite">
+            </v-col>
+        </v-row>
+    </v-container>
 </template>
 
 <script>
@@ -27,10 +34,34 @@ export default {
 </script>
 
 <style scoped>
-    header {
-        box-sizing: border-box;
-        padding: 0px;
-        margin: 0px;
+
+    .container{
+        min-height: 100vh;
+        background-color: #eaf8bf;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .navbarHaut{
+        background-color: #335c67;
+        max-height: 10vh
+    }
+
+    .contenu{
+         
+    }
+
+    .contenuGauche{
+        background-color: aliceblue;
+        border: solid 1px #335c67;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .contenuDroite{
+        background-color: aliceblue;
+        border: solid 1px #335c67;
+        border-radius: 10px 0 0 10px;
     }
 
 </style>
