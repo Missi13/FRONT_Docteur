@@ -7,6 +7,7 @@
         <!--contenu-->
         <v-row class="contenu d-flex flex-row justify-space-between">
             <v-col cols="3" class="contenuGauche">
+                <navbar/>
             </v-col>
 
             <v-col cols="9" class="contenuDroite">
@@ -16,7 +17,7 @@
 </template>
 
 <script>
-// import navbar from "@/components/navbar-components/app-navbar.vue"
+import navbar from "@/components/navbar-components/app-navbar.vue"
 export default {
     name: 'MonAcceuil',
     data(){
@@ -26,7 +27,7 @@ export default {
     },
 
     components:{
-        // navbar
+        navbar
     },
 
 }
