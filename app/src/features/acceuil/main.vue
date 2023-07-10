@@ -37,7 +37,7 @@ export default {
 
     .container{
         min-height: 100vh;
-        background-color: #eaf8bf;
+        background-color: #335c67;
         display: flex;
         flex-direction: column;
         justify-content: space-around;

@@ -1,12 +1,12 @@
 <template>
-    <v-navigation-drawer floating permanent width="100%" height="100%">
+    <v-navigation-drawer floating permanent width="100%" height="100%" class="d-flex align-center navig">
         
-        <v-list dense nav color="#F1F1F1" height="100%">
+        <v-list dense nav width="100%" height="100%" class="d-flex align-between">
 
-            <v-list-item-group v-model="selectedItem" color="#335c67" height="100%" d-flex align-content-space-around>
+            <v-list-item-group v-model="selectedItem" color="#335c67" class="d-flex flex-column list_btn">
 
                 <!-- Mon compte -->
-                <v-list-item link>
+                <v-list-item link class="btn">
                     <v-list-item-icon>
                         <v-icon>mdi-view-dashboard</v-icon>
                     </v-list-item-icon>
@@ -16,6 +16,9 @@
                 </v-list-item>
 
                 <v-divider></v-divider>
+
+
+
 
                 
 
@@ -164,7 +167,16 @@ export default {
 </script>
 
 <style scoped>
-.navbar {
-    background-color: aquamarine;
-}
+
+
+
+    .list_main {
+        background-color: yellowgreen;
+    }
+
+    .list_btn {
+        margin: 0px;
+        padding: 0px;
+        background-color: #eaf;
+    }
 </style>
